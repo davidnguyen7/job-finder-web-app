@@ -1,11 +1,20 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import SearchForm from "../components/forms/SearchForm";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<Welcome />
+    <div class="flex justify-center items-center h-screen w-auto mx-2">
+        <div class="search-container w-128">
+            <h1
+                class="text-6xl text-gray-800 font-extrabold text-center mb-4 tracking-tighter"
+            >
+                JobSearch
+            </h1>
+            <p class="text-gray-600 text-center mb-8">
+                Gathers information from all the popular job sites!
+            </p>
+            <SearchForm client:load />
+        </div>
+    </div>
 </Layout>

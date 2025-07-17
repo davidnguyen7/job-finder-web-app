@@ -1,0 +1,13 @@
+---
+import SearchResults from "../components/SearchResults";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+    <div
+        class="lg:w-4xl mx-4 lg:mx-auto flex flex-col min-h-screen lg:h-screen py-8"
+    >
+        <h1 class="text-3xl font-bold mb-8">Job Postings</h1>
+        <SearchResults client:load />
+    </div>
+</Layout>
