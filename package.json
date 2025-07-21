@@ -2,6 +2,7 @@
   "name": "job-finder-web-app",
   "version": "0.0.1",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
